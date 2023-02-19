@@ -21,6 +21,7 @@ public class ListaADM {
         else    // 2nda en adelante
         {
         //2
+        //2
         
         Miobjeto pastel_aux = new Miobjeto();
         pastel_aux.nombre=pastel;
