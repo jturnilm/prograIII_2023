@@ -16,6 +16,10 @@ public class Arbolitomuestra {
     public static void main(String[] args) {
         // TODO code application logic here
   
+        Nodo n;
+        n=new Nodo(5);
+        
+        
   Arbol  lista= new Arbol();
   lista.insertar(15);
   
@@ -30,6 +34,7 @@ public class Arbolitomuestra {
   lista.imprimimos2(lista.raiz);
   
   lista.imprimimos3(lista.raiz);
+
     }
     
 }

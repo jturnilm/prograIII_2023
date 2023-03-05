@@ -9,6 +9,12 @@ package arbolitomuestra;
  * @author ubuntu
  */
 class Nodo {
+    
+    String nombre;
+    String Direcc;
+    
+    
+    
     public int valor;
     public Nodo izq;
     public Nodo der;
@@ -18,5 +24,6 @@ class Nodo {
         izq=null;
     der=null;
     }
+    Nodo(){}
     
 }

@@ -16,18 +16,26 @@ class Arbol {
         {
             raiz=new Nodo(v);
             
-        }
+        }/*validacion que la raiz es null*/
         else{
             Nodo aux=raiz,anterior=null;
+            
+            /*
+            Nodo aux=raiz;
+            Nodo anterior=null;
+            
+            */
             while(aux!=null)
             {
+           /*  buscar donde realizara el insert*/
+                
                 anterior =aux;
                 if(aux.valor<v)
                  aux=   aux.izq;
                 else
                     aux=aux.der;
             }
-            
+            /*realiza el insert*/
             if(anterior.valor<v)
                 anterior.izq=new Nodo(v);
             else
@@ -35,20 +43,17 @@ class Arbol {
         }
     }
     
- void   imprimimos(Nodo n){
+ void   imprimimos(Nodo n){//inorden
         if(n.izq!=null)
-            imprimimos(n.izq);
-        
+            imprimimos(n.izq);        
         System.out.println(n.valor);
         if(n.der!=null)
                        imprimimos(n.der);
-
-    
     }
 
  
  
-  void   imprimimos2(Nodo n){
+  void   imprimimos2(Nodo n){//postorden
         System.out.println(n.valor);
 
       if(n.izq!=null)
@@ -60,7 +65,7 @@ class Arbol {
     }
          
 
-  void   imprimimos3(Nodo n){
+  void   imprimimos3(Nodo n){//preorden
      
       if(n.izq!=null)
             imprimimos3(n.izq);
