@@ -53,7 +53,7 @@ class Arbol {
 
  
  
-  void   imprimimos2(Nodo n){//postorden
+  void   imprimimos2(Nodo n){//preorden
         System.out.println(n.valor);
 
       if(n.izq!=null)
@@ -65,7 +65,7 @@ class Arbol {
     }
          
 
-  void   imprimimos3(Nodo n){//preorden
+  void   imprimimos3(Nodo n){//postorden
      
       if(n.izq!=null)
             imprimimos3(n.izq);
