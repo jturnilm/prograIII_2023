@@ -65,8 +65,6 @@ public class ListaADM {
         
         if(primero.nombre.equals(pastel))
             return true;
-  
-            
         
             Miobjeto iterador=primero.siguiente;//es el 2ndo vd
        
@@ -75,19 +73,31 @@ public class ListaADM {
         if(!iterador.nombre.equals(pastel))
         {
              iterador=iterador.siguiente;
-         
-         
         }
         else{
-            
             
        return true;
         
         }
     
-    
         }
         
         return false;
     }
+    
+     boolean buscarR(String pastel,Miobjeto s)
+    {
+            //iterador=iterador.siguiente;
+        if(s!=null ){
+                        if(!s.nombre.equals(pastel))
+                        {return true;}
+                         else
+                        buscarR(pastel,s.siguiente);
+                     }
+        else
+            return false;
+        
+        return false;
+    }
+   
 }

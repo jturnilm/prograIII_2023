@@ -61,7 +61,7 @@ public class ListaDinamicaPrograIII {
        
        lista.buscar("fresas con crema");
         lista.buscar("chocolate");
-       
+       lista.buscarR("tiramisu", lista.primero);
     }
     
 }
